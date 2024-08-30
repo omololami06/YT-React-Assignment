@@ -1,0 +1,69 @@
+@import "../Scss//extends";
+@import "../Scss//includes";
+@import "../Scss//variables";
+
+#Footer {
+  @include anyScreen(1045px) {
+    .contact {
+      width: $width;
+
+      .truth {
+        width: $width;
+        margin: $margin;
+        text-align: $align;
+
+        p {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  .section6 {
+    max-width: $max;
+    margin: $margin;
+    margin-top: $up;
+    text-align: $align;
+
+    .contact {
+      text-align: $align;
+      width: $width;
+      margin: $margin;
+
+      h4 {
+        @extend .pop65;
+        @extend .width314;
+        margin: $margin;
+        color: $color;
+      }
+
+      p {
+        @extend .pop20;
+        margin: $margin;
+        width: 690px;
+        height: 90px;
+        text-align: $align;
+        margin-bottom: 120px;
+      }
+    }
+
+    .footer-logo {
+      img {
+        margin-bottom: 114px;
+        width: 262.96px;
+        // height: 126px;
+      }
+    }
+
+    .footer-icons {
+      @include flex-center;
+      gap: 30px;
+      margin-bottom: 66px;
+    }
+
+    p {
+      @extend .pop20;
+      margin-bottom: 40px;
+    }
+  }
+}

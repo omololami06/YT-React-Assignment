@@ -1,0 +1,113 @@
+@import "../Scss//extends";
+@import "../Scss//includes";
+@import "../Scss//variables";
+
+#Services {
+  @include anyScreen(1045px) {
+    .section3 {
+      margin-top: -400px;
+      width: $width;
+
+      .div1 {
+        .parag {
+          // margin: $margin;
+          @include flex-column;
+          width: $width;
+          p {
+            margin: unset;
+            width: 300px;
+          }
+        }
+
+        h4 {
+          margin: unset;
+        }
+      }
+
+      .div2 {
+        @include flex-column;
+        width: $width;
+
+        .same {
+          width: $width;
+
+          p {
+            width: 400px;
+            margin: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .section3 {
+    max-width: $max;
+    margin-left: 126px;
+    margin-right: 125px;
+    .div1 {
+      width: $width;
+      margin-top: -70px;
+      margin-bottom: 150px;
+
+      h4 {
+        @extend .pop65;
+        @extend .width295;
+        margin: $margin;
+      }
+
+      p {
+        @extend .pop20;
+        width: 875px;
+        height: 60px;
+        margin: $margin;
+        text-align: $align;
+      }
+    }
+
+    .div2 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .same {
+        @include flex-column;
+        width: 417px;
+        height: 536px;
+        justify-content: flex-start;
+
+        img {
+          width: 100px;
+          height: 90px;
+          //   top: 25px;
+          margin-bottom: 65px;
+          //   float: left;
+          margin-left: -100px;
+        }
+
+        h3 {
+          @extend .pop32;
+          margin-bottom: 12px;
+          margin-left: -30px;
+        }
+
+        p {
+          font-family: "Poppins" sans-serif;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 36px;
+          text-align: left;
+          width: 240px;
+          //   height: 140px;
+        }
+      }
+      .same:hover {
+        background-color: #ffffff;
+        border: 3px solid #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 600px;
+      }
+    }
+  }
+}

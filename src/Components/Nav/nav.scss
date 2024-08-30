@@ -1,0 +1,52 @@
+@import "../Scss//extends";
+@import "../Scss//includes";
+@import "../Scss//variables";
+
+#Nav {
+  Nav {
+    width: 100%;
+
+    //   .line {
+    //     @extend .width752;
+    //     margin-top: 100px;
+    //   }
+
+    ol {
+      margin-left: 74px;
+      margin-right: 74px;
+      @include flex-between;
+      list-style-type: none;
+      flex-wrap: wrap;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover {
+        color: $color;
+        text-decoration: underline;
+      }
+    }
+
+    .home {
+      @include flex-center;
+      gap: 40px;
+      @extend .pop18;
+
+      //   .me {
+      //   }
+    }
+
+    .port {
+      border: 4px solid;
+      background-color: black;
+      width: 188px;
+      height: 52px;
+      a {
+        color: white;
+        padding: 15px;
+        @extend .pop188;
+      }
+    }
+  }
+}

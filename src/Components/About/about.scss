@@ -1,0 +1,101 @@
+@import "../Scss//extends";
+@import "../Scss//includes";
+@import "../Scss//variables";
+
+#About {
+  @include background-img("../../assets/bg2.svg");
+
+  @include anyScreen(1045px) {
+    .section2 {
+      width: $width;
+      // margin: $margin;
+
+      .one {
+        // margin: $margin;
+        @include flex-column;
+        text-align: center;
+        width: $width;
+
+        .para {
+          width: $width;
+          // margin: $margin;
+          p {
+            // margin: $margin;
+            width: 450px;
+            height: 150px;
+          }
+        }
+      }
+
+      .picture {
+        width: 50%;
+        margin-top: 150px;
+
+        img {
+          height: 400px;
+        }
+      }
+    }
+
+    // .about-me-text {
+    //   font-size: 1.2rem;
+    // }
+  }
+
+  .section2 {
+    max-width: $max;
+    margin-top: 100px;
+    @include background("../../assets/bg.png");
+
+    .one {
+      width: $width;
+      margin-bottom: 100px;
+
+      h4 {
+        @extend .pop65;
+        @extend .width314;
+        margin: $margin;
+      }
+
+      p {
+        @extend .pop20;
+        margin: $margin;
+        width: 690px;
+        height: 90px;
+        text-align: center;
+      }
+    }
+
+    .dopic {
+      width: $width;
+      @include flex-center;
+      //   gap: 200px;
+
+      .dots {
+        width: 60px;
+        height: 260px;
+        margin-top: -70px;
+        margin-left: 100px;
+      }
+
+      .picture {
+        @include flex-center;
+        width: $width;
+        height: 200px;
+        margin-left: -100px;
+
+        img {
+          @extend .width576;
+          margin-top: 50%;
+          //   @include image("../../assets/bg2.svg");
+        }
+      }
+    }
+
+    // .another-dot {
+
+    //   @extend .pop65;
+    //   color: $color;
+    // }
+  }
+}

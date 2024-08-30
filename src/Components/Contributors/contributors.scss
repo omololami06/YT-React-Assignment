@@ -1,0 +1,80 @@
+@import "../Scss//extends";
+@import "../Scss//includes";
+@import "../Scss//variables";
+
+#Contributors {
+  @include anyScreen(1045px) {
+    .one {
+      width: $width;
+      h4 {
+        width: 200px;
+        font-size: 50px;
+      }
+
+      .port {
+        width: $width;
+
+        p {
+          text-align: center;
+          width: 150px;
+        }
+      }
+    }
+
+    .two {
+      width: $width;
+
+      .google {
+        @include flex-column;
+        margin: $margin;
+      }
+      .labs {
+        @include flex-column;
+        margin: $margin;
+      }
+    }
+  }
+
+  .section4 {
+    max-width: $max;
+    margin-top: $up;
+    // min-height: 810px;
+
+    .one {
+      width: $width;
+      margin-bottom: 82px;
+      //   margin-top: -70px;
+      //   margin-bottom: 150px;
+
+      h4 {
+        @extend .pop65;
+        @extend .width437;
+        margin: $margin;
+      }
+
+      p {
+        @extend .pop20;
+        width: 700px;
+        height: 60px;
+        margin: $margin;
+        text-align: $align;
+      }
+    }
+
+    .two {
+      width: $width;
+      text-align: $align;
+      //   @include flex-center;
+
+      .images {
+        @include flex-center;
+        gap: 93px;
+        margin-bottom: 40px;
+      }
+
+      .google {
+        margin-bottom: 70px;
+      }
+    }
+  }
+}
