@@ -15,7 +15,7 @@
       // @include mobile("../../assets/circle.svg");
       @include flex-column;
 
-      // text-align: $align;
+      text-align: $align;
 
       ol {
         flex-direction: column;
@@ -23,6 +23,7 @@
 
         .home {
           gap: 20px;
+          text-wrap: wrap;
         }
       }
 
@@ -31,9 +32,9 @@
         @include flex-column;
         text-align: $align;
 
-        .image {
-          display: none;
-        }
+        // .image {
+        //   display: none;
+        // }
 
         .left {
           max-width: $width;
@@ -43,8 +44,8 @@
             margin: $margin;
           }
 
-          img {
-            margin: $margin;
+          .icons {
+            @include flex-center;
           }
         }
       }

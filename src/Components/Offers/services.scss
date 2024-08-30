@@ -6,8 +6,8 @@
   @include anyScreen(1045px) {
     .section3 {
       margin-top: -400px;
-      width: $width;
-
+      // width: $width;
+      text-align: $align;
       .div1 {
         .parag {
           // margin: $margin;
@@ -17,10 +17,6 @@
             margin: unset;
             width: 300px;
           }
-        }
-
-        h4 {
-          margin: unset;
         }
       }
 

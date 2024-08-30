@@ -4,14 +4,21 @@
 
 #Portfolio {
   @include anyScreen(1045px) {
-    .our {
-      // margin-bottom: unset;
-      width: 100%;
-      height: unset;
+    .section5 {
+      width: $width;
+      .our {
+        h4 {
+          margin: $margin;
+        }
+        h5 {
+          // text-align: $align;
+          width: 300px;
+          margin: $margin;
+        }
+      }
 
-      h5 {
-        width: 300px;
-        margin: $margin;
+      .grid-container {
+        overflow: hidden;
       }
     }
   }

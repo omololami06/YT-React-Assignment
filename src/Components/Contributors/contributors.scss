@@ -4,33 +4,36 @@
 
 #Contributors {
   @include anyScreen(1045px) {
-    .one {
-      width: $width;
-      h4 {
-        width: 200px;
-        font-size: 50px;
-      }
-
-      .port {
+    .section4 {
+      text-align: $align;
+      .one {
         width: $width;
+        h4 {
+          width: 200px;
+          font-size: 50px;
+        }
 
-        p {
-          text-align: center;
-          width: 150px;
+        .port {
+          width: $width;
+
+          p {
+            text-align: center;
+            width: 300px;
+          }
         }
       }
-    }
 
-    .two {
-      width: $width;
+      .two {
+        width: $width;
 
-      .google {
-        @include flex-column;
-        margin: $margin;
-      }
-      .labs {
-        @include flex-column;
-        margin: $margin;
+        .google {
+          @include flex-column;
+          margin: $margin;
+        }
+        .labs {
+          @include flex-column;
+          margin: $margin;
+        }
       }
     }
   }

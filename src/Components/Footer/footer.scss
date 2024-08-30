@@ -4,16 +4,18 @@
 
 #Footer {
   @include anyScreen(1045px) {
-    .contact {
-      width: $width;
-
-      .truth {
+    .section6 {
+      .contact {
         width: $width;
-        margin: $margin;
-        text-align: $align;
 
-        p {
-          width: 300px;
+        .truth {
+          width: $width;
+          margin: $margin;
+          text-align: $align;
+
+          p {
+            width: 300px;
+          }
         }
       }
     }
